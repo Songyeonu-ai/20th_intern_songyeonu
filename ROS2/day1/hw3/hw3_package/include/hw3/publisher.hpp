@@ -32,12 +32,3 @@ class Pub : public rclcpp::Node
 };
 
 
-// mycpp_publisher_ = this->create_publisher<std_msg::String>("topicname", 10);
-// timer_ = this->create_wall_timer(1s, std::bind(&MyCppNode::timer_callback, this));
-
-// private:
-//     rclcpp::TimerBase::SharePtr timer_;
-//     void timer_callback();
- 
-//     rclcpp::Publisher<std_msgs::msg::Strimg>::SharePtr mycpp_publisher_;
-
