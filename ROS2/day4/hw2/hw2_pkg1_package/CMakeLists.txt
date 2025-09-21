@@ -13,8 +13,8 @@ find_package(rosidl_default_generators REQUIRED)
 find_package(custom_interfaces REQUIRED)
 find_package(sensor_msgs REQUIRED)
 
-rosidl_generate_interfaces(hw2_pkg1
-  "msg/AddTwoInts.msg"
+include_directories(
+${custom_interfaces_INCLUDE_DIRS}
 )
 
 add_executable(hw2_pkg1_node src/sub_node.cpp)
