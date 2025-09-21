@@ -12,9 +12,8 @@ find_package(std_msgs REQUIRED)
 find_package(rosidl_default_generators REQUIRED)
 find_package(custom_interfaces REQUIRED)
 
-
-rosidl_generate_interfaces(hw1_node
-"msg/AddTwoInts.msg"
+include_directories(
+${custom_interfaces_INCLUDE_DIRS}
 )
 
 add_executable(sub_node src/sub_node.cpp)
