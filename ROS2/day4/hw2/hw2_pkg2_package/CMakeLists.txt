@@ -15,8 +15,8 @@ find_package(geometry_msgs REQUIRED)
 find_package(custom_interfaces REQUIRED) 
 
 
-rosidl_generate_interfaces(hw2_pkg2
-"msg/AddTwoInts.msg"
+include_directories(
+${custom_interfaces_INCLUDE_DIRS}
 )
 
 add_executable(hw2_node src/pub_node.cpp)
