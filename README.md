@@ -42,4 +42,4 @@
 4. OpenCV
    day1-hw1(o)
        -hw2() 보고서, 영상 미제출
-   day2-hw1
+   day2-hw1() 기능 미흡
